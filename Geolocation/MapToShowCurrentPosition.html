@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+            type="text/javascript"></script>-->
+    <title></title> 
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqz5oVB2WKr8EXpXkAM3ClV7cCTzGl6U&callback=initMap" type="text/javascript"></script>
+</head>
+<body>
+    <div id="myMap" style="width:600px;height:600px;"></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            navigator.geolocation.getCurrentPosition(getPosition, showError);
+
+            function getPosition(position) {
+                var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+                var div = document.getElementById('myMap');
+                var option = {
+                    zoom: 15,
+                    center: coords,
+                    mapTypeControl: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    navigationControlOption: {
+                        style: google.maps.NavigationControlStyle.SMALL
+                    }
+
+                };
+
+                //Create Map vaible to give div,option
+                var map = new google.maps.Map(div, option);
+                var marker = new google.maps.Marker({
+                    position: coords,
+                    map: map,
+                    title: "I am at NoorjahanRoad!!!!"
+                });
+                //var marker = new google.maps.Marker({
+                //    position: coords,
+                //    map: map,
+                //    title: "We are in Bazl!!!"
+                //});
+
+            }
+
+            function showError(error) {
+                alert(error.message);
+            }
+
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\bin\Geolocation.dll.config
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\bin\Geolocation.dll
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\bin\Geolocation.pdb
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\obj\Debug\Geolocation.csprojResolveAssemblyReference.cache
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\obj\Debug\Geolocation.dll
+D:\Class\M04\practice HTML&JAVASCRIPT\AllEvidence\Geolocation\Geolocation\Geolocation\obj\Debug\Geolocation.pdb

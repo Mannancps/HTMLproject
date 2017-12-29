@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Retrieving the current position</title>
+</head>
+<body>
+    <h2>Retreive the current location click this button</h2>
+    <button  onclick="getCurrentLocation()">Clik me</button>
+    <p id="demo"></p>
+    <script type="text/javascript">
+
+        var x = document.getElementById("demo");
+
+        function getCurrentLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+        }
+        function showPosition(position) {
+            var datetime = new Date(position.timestamp).toString();
+            x.innerHTML="Latitude :" + position.coords.latitude + "</br>Longitude :" + position.coords.longitude + "</br>Date :" + datetime;
+        }
+
+    </script>
+</body>
+</html>
